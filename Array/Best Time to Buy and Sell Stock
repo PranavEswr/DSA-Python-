@@ -1,0 +1,14 @@
+***** Notes *****
+Use two pointers left and right, where left = buy, right = sell and calculate profit if prices[left] < prices[right]
+
+***** Solution *****
+
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        left, profit = 0, 0 #left = buy #right = sell
+        for right in range(len(prices)):
+            if prices[right]>prices[left]:
+                profit = max(profit, prices[right]-prices[left])
+            else:
+                left = right
+        return profit

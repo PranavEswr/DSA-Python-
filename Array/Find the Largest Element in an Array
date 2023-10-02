@@ -2,8 +2,9 @@ Solution 1 Brute Force
 Sort the array and return the End value
 
 Solution 2 Optimal 
-max = arr[0]
-for i in range(0, n):
-  if max < arr[i]:
-    max = arr[i]
-return max
+def largestElement(arr: [], n: int) -> int:
+    max = arr[0]
+    for i in range(0, n):
+        if max < arr[i]:
+            max = arr[i]
+    return max

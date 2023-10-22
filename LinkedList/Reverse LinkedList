@@ -1,8 +1,10 @@
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+***** Notes *****
+Best => 
+- Intialise current (cur) and previous (prev) to head and None
+- Move previous to current, current to next (Save to temporary while breaking link)
+- Return the previous to reverse the linkedlist
+
+***** Solution *****
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         cur, prev = head, None

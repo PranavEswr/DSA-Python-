@@ -1,5 +1,5 @@
 ***** Notes *****
-Brute Force => Sort the array and return the End value
+Brute Force => Sort the array and return the first value
 
 Optimal => 
 - Declare "min" variable and traverse

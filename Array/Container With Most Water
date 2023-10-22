@@ -1,3 +1,11 @@
+***** Notes *****
+Brute Force => Use for two loops and find area for evry possible containers. Then find the one with largest area 
+Complexity 0(N^2)
+
+Best Solution => Use two pointers - l, r
+Complexity O(N)
+
+***** Solution *****
 class Solution:
     def maxArea(self, height: List[int]) -> int:
         l, r = 0, len(height)-1

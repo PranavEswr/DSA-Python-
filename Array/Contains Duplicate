@@ -1,3 +1,14 @@
+***** Notes *****
+Brute Force => Two for loops and compare with each and every numbers 
+Complexity Time-O(N^2) Space-O(1)
+
+Better => Sort the array and check for the neighbouring elements
+Complexty Time-O(NlogN) Space-O(1)
+
+Best => Hashmap
+Complexity Time-O(N) Space-O(N)
+
+
 ***** Solution *****
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:

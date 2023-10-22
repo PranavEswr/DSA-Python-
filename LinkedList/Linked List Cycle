@@ -1,9 +1,14 @@
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+***** Notes *****
+Brute Force => Use hashmap and compare with values on every index 
+Complexity Space- O(N) 
 
+Best =>
+Floyd's Cycle Finding Algorithm
+- Two pointers, slow and fast and are initialised to head
+- slow shifts by 1 index and fast shifts by 2 index positions
+- At a point, both slow and fast meets. Hence Cycle in LinkedList
+
+***** Solution *****
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
         slow, fast = head, head

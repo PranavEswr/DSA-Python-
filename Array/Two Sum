@@ -1,6 +1,6 @@
 ***** Notes *****
 Brute Force ==> Use two for loops, but complexity will be O(N^2)
-Optimal ==> One for loop and Dictionary
+Optimal ==> One for loop and Dictionary O(N)
 
 ***** Code *****
 class Solution:

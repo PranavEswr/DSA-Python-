@@ -1,3 +1,10 @@
+***** Notes *****
+Best =>
+- For bit-by-bit operation, take AND of input by shifting towards right
+- "res" is initialised to zero, AND is not possible 
+- OR each bit with "res" towards right 
+
+***** Solution *****
 class Solution:
     def reverseBits(self, n: int) -> int:
         res = 0

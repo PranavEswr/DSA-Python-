@@ -1,3 +1,13 @@
+***** Notes *****
+Better => 
+- Find prefix and postfix for the input array
+- Perform the product of prefix and postfix array according to the respective index of input array
+- Attach the product into output array
+
+Best =>
+- Instead of separate prefix and postfix array, perform product and update in output array
+
+***** Solution *****
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         res = [1]*(len(nums))

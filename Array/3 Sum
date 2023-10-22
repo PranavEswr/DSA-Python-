@@ -1,3 +1,11 @@
+***** Notes *****
+Brute Force => Three For loops 
+Complexity T-O(N^2)
+
+Best Solution => 
+Sort the array and solve using two pointers under certain conditions to avoid duplicates
+
+***** Solution *****
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         res = []

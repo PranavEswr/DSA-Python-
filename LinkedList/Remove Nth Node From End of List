@@ -1,9 +1,12 @@
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+***** Notes *****
+Best => 
+- Two pointers L and R : L is initialised at 0th index and R at 2th index (to eliminate second last element, according to question)
+- Increment both L and R, while making a differenc of two locations on each increment
+- Increment both until R becomes Null
+- Remove the Lth node
 
+
+***** Solution *****
 class Solution:
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
         dummy = ListNode(0, head)

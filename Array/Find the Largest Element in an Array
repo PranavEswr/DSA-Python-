@@ -1,7 +1,11 @@
-Solution 1 Brute Force
-Sort the array and return the End value
+***** Notes *****
+Brute Force => Sort the array and return the End value
 
-Solution 2 Optimal 
+Optimal => 
+- Declare "max" variable and traverse
+- Update max incase of any maximum values
+
+***** Solution *****
 def largestElement(arr: [], n: int) -> int:
     max = arr[0]
     for i in range(0, n):

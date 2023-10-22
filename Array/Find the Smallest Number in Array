@@ -1,9 +1,13 @@
-Solution 1 Brute Force
-Sort the array and return the End value
+***** Notes *****
+Brute Force => Sort the array and return the End value
 
-Solution 2 Optimal 
-max = arr[0]
+Optimal => 
+- Declare "min" variable and traverse
+- Update min incase of any minimum values
+
+***** Solution *****
+min = arr[0]
 for i in range(0, n):
-  if max < arr[i]:
-    max = arr[i]
-return max
+  if min > arr[i]:
+    min = arr[i]
+return min

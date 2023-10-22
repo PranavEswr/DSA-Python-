@@ -1,3 +1,11 @@
+***** Notes *****
+Best => 
+- Use XOR and AND to find sum of two integers without arithematic operators
+- Find (a XOR b) 
+- (a AND b) and shift towards left 
+- Continue the process until the carry becomes zero
+
+***** Solution *****
 class Solution:
     def getSum(self, a: int, b: int) -> int:
         def add(a, b):

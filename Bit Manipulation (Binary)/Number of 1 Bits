@@ -1,3 +1,7 @@
+***** Notes *****
+Best => Take the modulus of given "n" with 2 and shift towards right 
+
+***** Solution *****
 class Solution:
     def hammingWeight(self, n: int) -> int:
         res = 0 

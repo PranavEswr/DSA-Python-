@@ -1,3 +1,11 @@
+***** Notes *****
+Brute Force => Linear Search
+Complexity T-O(NlogN) S-O(1)
+
+Better => Binary Search
+Complexity T-O(logN)
+
+***** Solution *****
 class Solution:
     def findMin(self, nums: List[int]) -> int:
         res = nums[0]

@@ -1,5 +1,6 @@
 ***** Notes *****
-Use two pointers left and right, where left = buy, right = sell and calculate profit if prices[left] < prices[right]
+For a linear solution, use two pointers left and right, where left = buy, right = sell. 
+Calculate profit if prices[left] < prices[right], else left equals right
 
 ***** Solution *****
 

@@ -10,4 +10,4 @@ class Solution:
             else:
                 res.append(nums[r]*nums[r])
                 r-=1
-        return res[::-1]
+        return res[::-1] #reverse the result

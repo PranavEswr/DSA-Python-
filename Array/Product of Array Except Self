@@ -20,3 +20,9 @@ class Solution:
             res[i] *= postfix
             postfix *= nums[i]
         return res
+
+#
+prefix = 1
+for i in range(len(nums)):
+    res[i] = prefix
+    prefix *= nums[i]

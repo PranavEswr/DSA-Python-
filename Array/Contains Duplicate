@@ -5,6 +5,14 @@ Complexity Time-O(N^2) Space-O(1)
 Better => Sort the array and check for the neighbouring elements
 Complexty Time-O(NlogN) Space-O(1)
 
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        nums.sort()
+        for i in range(len(nums)-1):
+            if nums[i] == nums[i+1]:
+                return True
+        return False
+
 Best => Hashmap
 Complexity Time-O(N) Space-O(N)
 

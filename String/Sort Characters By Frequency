@@ -1,0 +1,19 @@
+Brute Force Solution - Hashmap + Sort
+But sort will cause O(NLOG(N)) Time complexity
+
+Best Solution - Hahsmap + Bucketsort
+class Solution:
+    def frequencySort(self, s: str) -> str:
+        count = Counter(s)
+        bucket = defaultdict(list)
+
+        for char, cnt in count.items():
+            bucket[cnt].append(char)
+
+        res = []
+        for i in range(len(s),0,-1):
+            for c in bucket[i]:
+                res.append(c*i)
+        return "".join(res)
+
+Time - O(N) Space - O(N)

@@ -1,0 +1,16 @@
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        list = s.split()
+        list, s = list[::-1], ""
+
+        for i in list:
+            s+=i
+            s+=' '
+        return s.strip()
+
+Explanation:
+=> Split the string s and store it into a list last by using .split() function.
+=> Reverse the list last and re-declare the string s as empty
+=> Loop through the list lst and add the element into string s with space.
+=> Return the string s 
+(remove any unnecessary white spaces using the function .strip() )

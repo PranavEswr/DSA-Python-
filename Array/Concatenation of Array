@@ -1,0 +1,6 @@
+Solution >>
+-  Create an array
+- Iterate through the input array and append it to new array
+- Return the new array
+Complexity
+T = O(N + N) => O(N)

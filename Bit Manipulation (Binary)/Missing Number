@@ -1,11 +1,13 @@
 ***** Notes *****
-Best => Find the difference between Sum of arrays
+Best => Find the difference between Sum of arrays or Take XOR
 
-***** Solution *****
-class Solution:
-    def missingNumber(self, nums: List[int]) -> int:
-        res = len(nums)
+XOR =>
+res = len(nums)
+for i in range(len(nums)):
+    res ^= i^nums[i]
+return res
 
-        for i in range(len(nums)):
-            res += i - nums[i]
-        return res
+Gauss Formula n(n+1)//2 =>
+exp_sum = (len(nums))*(len(nums)+1)//2
+act_sum = sum(nums)
+return exp_sum - act_sum

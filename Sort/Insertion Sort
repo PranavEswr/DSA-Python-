@@ -1,0 +1,14 @@
+def insertionsort(nums):
+  for i in range(len(nums)):
+    temp = nums[i] 
+    last = i-1
+
+    while last>=0 and temp < nums[last]:
+      nums[last+1] = nums[last] 
+      last = last-1
+
+    nums[last+1] = temp
+
+nums = [2,5,1,3]
+insertionsort(nums)
+print(nums)

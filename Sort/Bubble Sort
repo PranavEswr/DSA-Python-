@@ -7,3 +7,5 @@ def bubblesort(nums):
 nums = [2,1,4,3]
 bsort(nums)
 print(nums)
+
+#nums = ['b','a','q','c']

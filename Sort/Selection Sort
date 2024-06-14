@@ -7,7 +7,7 @@ def selectionsort(nums):
     nums[i],nums[min] = nums[min],nums[i]
 
 nums = [2,1,4,3]
-ssort(nums)
+selectionsort(nums)
 print(nums)
 
 #nums = ['b','a','q','c']

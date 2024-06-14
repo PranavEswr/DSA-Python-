@@ -5,7 +5,7 @@ def bubblesort(nums):
         nums[j],nums[j+1] = nums[j+1],nums[j]
 
 nums = [2,1,4,3]
-bsort(nums)
+bubblesort(nums)
 print(nums)
 
 #nums = ['b','a','q','c']

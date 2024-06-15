@@ -1,0 +1,41 @@
+def mergesort(nums):
+  if len(nums)==1:
+    return nums
+
+  middle = len(nums)//2
+  left = nums[:middle]
+  right = nums[middle:]
+
+  left_res = mergesort(left)
+  right_res = mergesort(right) 
+
+  return merge(left_res,right_res)
+
+def merge(left_res,right_res):
+  res = [None]*(len(left_res)+len(right_res))
+  i=j=k=0
+
+  while i<len(left_res) and j<len(right_res):
+    if left_res[i] < right_res[j]:
+      res[k] = left_res[i]
+      i+=1
+    else:
+      res[k] = right_res[j] 
+      j+=1
+    
+    k+=1
+
+  while i<len(left_res):
+    res[k] = left_res[i]
+    i+=1
+    k+=1
+
+  while j<len(right_res):
+    res[k] = right_res[j] 
+    j+=1
+    k+=1
+
+  return res
+
+nums = [2,1,4,3]
+mergesort(nums)

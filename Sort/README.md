@@ -9,3 +9,4 @@ Divide: the problem into a number of subproblems that are smaller instances of t
 Conquer: the subproblems by solving them recursively. If they are small enough, solve the subproblems as base cases.
 Combine: the solutions to the subproblems into the solution for the original problem.
 
+![Complexity Sorting](https://github.com/PranavEswr/DSA-Python-/assets/91025454/b170ffff-207d-4df5-86b4-3fa640f825bd)

@@ -1,0 +1,27 @@
+Code:-
+def qsort(nums):
+  qshelp(nums,0,len(nums)-1)
+  return nums
+
+def qshelp(nums, start, end):
+  if start>=end:
+    return
+  
+  pivot = start
+  left = start+1
+  right = end
+
+  while right>=left:
+    if nums[left]>nums[pivot] and nums[right]<nums[pivot]:
+      nums[left],nums[right]=nums[right],nums[left]
+    if nums[left]<=nums[pivot]:
+      left+=1
+    if nums[right]>=nums[pivot]:
+      right-=1
+  nums[pivot],nums[right]=nums[right],nums[pivot]
+
+  qshelp(nums,start,right-1)
+  qshelp(nums,right+1,end)
+
+nums = [2,1,4,3]
+qsort(nums)

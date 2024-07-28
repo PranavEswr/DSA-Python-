@@ -1,0 +1,15 @@
+***** Explanation *****
+Reverse the Integer by casting as a string. We also need to account for negative values so I cast an absolute value of the Integer as a string
+Only 32 bit Integers are allowed so add a validation check
+Determine if the Integer was negative to begin with. If so, make it negative when returned
+
+***** Solution *****
+class Solution:
+    def reverse(self, x: int) -> int:
+        stringo = str(abs(x))[::-1]
+
+        if int(stringo) > 2**31:
+            stringo = '0'
+        elif x<0:
+            stringo = '-' + stringo
+        return int(stringo)

@@ -10,3 +10,12 @@ class Solution:
             elif map[s[i]] != t[i]:
                 return False
         return True
+
+We can solve this problem by using two data structures:
+- a dictionary to store the character mappings and
+- a set to keep track of the characters that have already been mapped.
+We can traverse both the strings simultaneously and for each character in s and t,
+we check if it has been mapped before. If not, we add it to the dictionary and the set.
+
+If it has been mapped before, we check if its mapping is the same as the current character in t.
+If not, we return False. If we have successfully traversed both strings without any mismatch, we return True.
